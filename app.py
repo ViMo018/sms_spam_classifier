@@ -10,8 +10,8 @@ import pickle
 import streamlit as st
 
 # ---------------- Load model & vectorizer ----------------
-model = pickle.load(open("model.pkl", "rb"))
-vectorizer = pickle.load(open("vectorizer.pkl", "rb"))
+model = pickle.load(open("model3.pkl", "rb"))
+vectorizer = pickle.load(open("vectorizer3.pkl", "rb"))
 
 # ---------------- Page Configuration ----------------
 st.set_page_config(
@@ -62,3 +62,4 @@ if st.button("Predict"):
 
 # ---------------- Footer ----------------
 st.markdown("<p style='text-align:center;color:#888888;font-size:12px;'>Built with ❤️ using Streamlit & Python</p>", unsafe_allow_html=True)
+
